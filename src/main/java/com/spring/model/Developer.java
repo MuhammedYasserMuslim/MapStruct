@@ -2,7 +2,7 @@ package com.spring.model;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.spring.model.enums.Framework;
+import com.spring.enums.Framework;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;

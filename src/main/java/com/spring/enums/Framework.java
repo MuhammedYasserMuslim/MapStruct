@@ -1,4 +1,4 @@
-package com.spring.model.enums;
+package com.spring.enums;
 
 public enum Framework {
 

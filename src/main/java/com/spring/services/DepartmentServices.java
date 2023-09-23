@@ -3,17 +3,17 @@ package com.spring.services;
 import com.spring.base.BaseServices;
 import com.spring.model.Department;
 import com.spring.repository.DepartmentRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
 @Service
+@RequiredArgsConstructor
 public class DepartmentServices extends BaseServices<Department,Long> {
 
-    @Autowired
-    DepartmentRepository departmentRepository;
+    private final DepartmentRepository departmentRepository;
 
     @Override
     public Long count() {
